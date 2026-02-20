@@ -8,8 +8,8 @@ The project includes a navigation menu, styled sections, a contact form, and res
 
 ## Technologies Used
 
-- HTML5
-- CSS3
+- HTML
+- CSS
   
 ## Features Implemented
 
