@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elsa Miftari | Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#information">Information</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="box">
+            <h1>Elsa Miftari</h1>
+            <p>
+                Business Information Technology student at Laurea University of Applied Sciences.
+                Aspiring web developer with interest in modern, clean, and user-friendly design.
+            </p>
+
+            <!-- Profiilikuva omaan boxiin -->
+            <div class="image-box">
+                <img src="Me.jpg" alt="Profile picture">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="box">
+            <h2>About Me</h2>
+            <p>
+                I am a second-year BIT (BBA) student. I enjoy learning web development,
+                working with technology, and improving my skills step by step.
+                In my free time I go to the gym and spend time with my family.
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="information" class="box">
+            <h2>Information</h2>
+            <div class="box">
+                <p>GitHub: https://github.com/elsamiftari</p>
+                <p>LinkedIn: www.linkedin.com/in/elsa-miftari-394669348</p>
+                <p>Email: miftarielsa2@gmail.com</p>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="box">
+            <h2>Contact Me</h2>
+
+            <form action="mailto:miftarielsa2@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="Message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Elsa Miftari</p>
+    </footer>
+
+</body>
+
+</html>

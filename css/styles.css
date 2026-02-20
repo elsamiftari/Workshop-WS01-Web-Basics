@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #050b1f;
+    color: #eaeaff;
+    line-height: 1.6;
+}
+
+/* ===== Headings ===== */
+h1, h2 {
+    color: #7dd3fc;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* ===== Paragraphs ===== */
+p {
+    margin-bottom: 15px;
+    color: #cbd5f5;
+}
+
+/* ===== Images ===== */
+img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(125, 211, 252, 0.5);
+}
+
+/* ===== Profiilikuva box ===== */
+.image-box {
+    width: 250px;
+    height: 300px;
+    margin: 30px auto;  /* keskittää horisontaalisesti */
+    background-color: #0a1230;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;       /* keskittää pystysuoraan */
+    justify-content: center;   /* keskittää vaakasuoraan */
+    box-shadow:
+        0 0 15px rgba(56, 189, 248, 0.4),
+        0 0 30px rgba(56, 189, 248, 0.2);
+}
+
+.image-box img {
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(125, 211, 252, 0.6);
+}
+
+/* ===== Navigation Styles ===== */
+nav {
+    background-color: #020617;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #7dd3fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+    text-shadow: 0 0 8px rgba(56, 189, 248, 0.8);
+}
+
+/* ===== Main Content ===== */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #0a1230;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow:
+        0 0 15px rgba(56, 189, 248, 0.4),
+        0 0 30px rgba(56, 189, 248, 0.2);
+}
+
+/* ===== Form Styles ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #7dd3fc;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #020617;
+    color: #ffffff;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+button,
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #38bdf8;
+    color: #020617;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #7dd3fc;
+    box-shadow: 0 0 12px rgba(125, 211, 252, 0.8);
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #94a3b8;
+}
+
+/* ===== Media Queries ===== */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.2rem; }
+    section { padding: 20px; }
+}
